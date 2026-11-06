@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator jQuery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="kalkulator">
+    <div class="identitas">
+      <div><span>Nama</span>: Rachel Krisna Pasaribu</div>
+      <div><span>NIM</span>: 255150700111001</div>
+    </div>
+
+    <input type="text" id="layar" value="0" readonly aria-label="Layar kalkulator">
+
+    <div class="area">
+      <div class="angka">
+        <button class="btn-angka">1</button>
+        <button class="btn-angka">2</button>
+        <button class="btn-angka">3</button>
+        <button class="btn-angka">4</button>
+        <button class="btn-angka">5</button>
+        <button class="btn-angka">6</button>
+        <button class="btn-angka">7</button>
+        <button class="btn-angka">8</button>
+        <button class="btn-angka">9</button>
+        <button class="btn-angka nol">0</button>
+      </div>
+      <div class="operator">
+        <button class="btn-op" data-op="+">+</button>
+        <button class="btn-op" data-op="-">−</button>
+        <button class="btn-op" data-op="/">÷</button>
+        <button class="btn-op" data-op="*">×</button>
+      </div>
+    </div>
+
+    <button id="sama">=</button>
+    <button id="hapus">C (Hapus)</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

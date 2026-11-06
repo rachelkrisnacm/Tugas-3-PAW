@@ -1,0 +1,97 @@
+:root {
+  --bg: #eef1f5;
+  --panel: #ffffff;
+  --warnatinta: #1d2733;
+  --angka: #e4e9f0;
+  --operasi: #2f5d8a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--warnatinta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.kalkulator {
+  background: var(--panel);
+  padding: 24px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 24px rgba(29, 39, 51, .12);
+}
+
+.identitas {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.identitas span { display: inline-block; width: 52px; }
+
+#layar {
+  width: 100%;
+  padding: 14px;
+  font-size: 26px;
+  text-align: right;
+  border: 3px solid var(--warnatinta);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-family: inherit;
+  background: #fff;
+  color: var(--warnatinta);
+}
+
+.area { display: flex; gap: 16px; }
+
+.angka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  flex: 3;
+}
+
+.operator {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 2;
+}
+
+button {
+  font-family: inherit;
+  font-size: 20px;
+  padding: 14px 0;
+  cursor: pointer;
+  border: 2px solid var(--warnatinta);
+  border-radius: 6px;
+  background: var(--angka);
+  color: var(--warnatinta);
+}
+button:hover { filter: brightness(.94); }
+button:active { transform: translateY(1px); }
+button:focus-visible { outline: 3px solid #e0a100; outline-offset: 2px; }
+
+.operator button { background: var(--operasi); color: #fff; }
+.nol { grid-column: 2; }
+
+#sama {
+  width: 100%;
+  margin-top: 14px;
+  background: var(--warnatinta);
+  color: #fff;
+}
+
+#hapus {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 8px 0;
+  background: #fff;
+}
